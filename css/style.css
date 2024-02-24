@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+/* Navigation */
+nav{
+    width: 100%;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav .brand{
+    width: 30%;
+    margin: 20px 0 20px 20px;
+}
+nav .brand a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+nav ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 5px 20px 0px;
+}
+nav ul .active{
+    background-color: #fff;
+    color: #2d2d2d;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    padding: 20px 37px;
+}
+
+nav ul li a:hover{
+    transition: 0.4s;
+    background-color: #fff;
+    color: #2d2d2d;
+}
+
+/* tonggle */
+nav #tonggle{
+    margin: 10px;
+    display: none;
+    transition: all 0.2s;
+}
+nav #tonggle button{
+    border-radius: 6px;
+    box-shadow:
+     0px 0px 5px 2px dodgerblue,
+     2px 2px 2px 2px crimson;
+}
+nav #tonggle .line{
+    display: block;
+    padding: 2px 20px;
+    margin: 10px;
+    background-color: #2d2d2d;
+}
+/* tonggle */
+/* Media query */
+/* For 1200px */
+@media only screen and (max-width:1200px){
+    nav .brand a,
+    nav ul li a{
+        font-size: 1.4rem;
+    }
+    nav ul{
+        width: 45%;
+    }
+    nav ul li a{
+        padding: 20px 28px;
+    }
+}
+/* For 1200px */
+
+/* For 1024 display */
+@media only screen and (max-width:1024px){
+    nav ul{
+        display: none;
+        width: 28%;
+    }
+    nav ul li a{
+        width: 100%;
+        line-height: 70px;
+    }
+    nav #tonggle{
+        display: block;
+    }
+}
+/* For 1024 display */
+/* Media query */
